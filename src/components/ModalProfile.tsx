@@ -40,6 +40,14 @@ export const ModalProfile:React.FC<ModalProfileProps> = ({bio, isExpanded}) => {
                     ))}
                 </div>
                 <div className="modal-flex-section">
+                <h2>Certifications</h2>
+                    {bio.certifications.map((ele, index) => (
+                        <div className="modal-general-div">
+                            <h5 className='modal-med-heading' key={index}>{ele}</h5>
+                        </div>
+                    ))}
+                </div>
+                <div className="modal-flex-section">
                     <h2>Skills</h2>
                     <div className='modal-skills-wrapper'>
                         <h5>Programming Languages</h5>
